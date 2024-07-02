@@ -11,26 +11,20 @@ import static com.example.customwaitclass.CustomWait.customWait;
 
 // page_url = https://www.jetbrains.com/
 public class MainPage {
-    // creating Logger object
     private final Logger LOG = LoggerFactory.getLogger(MainPage.class);
 
-    // accepting cookies
     @FindBy(css = "button[data-jetbrains-cookies-banner-action='ACCEPT_ALL']")
     public WebElement acceptCookies;
 
-    // finding Developers Tools menu
     @FindBy(xpath = "//div[@data-test='main-menu-item' and @data-test-marker = 'Developer Tools']")
     public WebElement toolsMenu;
 
-    // finding button for Aqua link
     @FindBy(css = "a[href='/aqua/']")
     public WebElement findAqua;
 
-    // finding button for Aqua download
     @FindBy(css = "a[href='https://www.jetbrains.com/shop/buy?item=C:N:QA:Y']")
     public WebElement buyAqua;
 
-    // finding subscription plans section
     @FindBy(css = "section[class='wt-section wt-section_bg_dark wt-section_theme_dark price-section'] > div > h2")
     private WebElement subscriptionPlans;
 

@@ -31,7 +31,6 @@ public class MainPageTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://www.jetbrains.com/");
 
-        // creating new object of MainPage class
         mainPage = new MainPage(driver);
     }
 
